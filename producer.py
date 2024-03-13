@@ -4,7 +4,7 @@ import json
 import time
 
 # Kafka Producer Configuration
-producer = Producer({'bootstrap.servers': 'localhost:9092'})
+producer = Producer({'bootstrap.servers': 'b-1.dstimsk.2c4w4v.c2.kafka.eu-west-1.amazonaws.com:9092'})
 
 # API endpoints
 API_KEY = "a0bd5e5a4d9a4c4098f143006241003"

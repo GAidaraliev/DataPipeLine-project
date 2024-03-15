@@ -1,11 +1,12 @@
-#from confluent_kafka import Producer
+from kafka import KafkaProducer
 import requests
 import json
 import time
 
 # Kafka Producer Configuration
-producer = Producer({'bootstrap.servers': 'b-1.dstimsk.2c4w4v.c2.kafka.eu-west-1.amazonaws.com:9092'})
-
+producer = KafkaProducer(bootstrap_servers='b-1.dstimsk.bfn7de.c2.kafka.eu-west-1.amazonaws.com:9092')
+# for _ in range(100):
+#     producer.send('my-topic', b'some_message_bytes')
 # API endpoints
 API_KEY = "a0bd5e5a4d9a4c4098f143006241003"
 hours = 1
@@ -17,7 +18,7 @@ while True:
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        producer.produce(topic='my-topic', key="dsti".encode('utf-8'), value=json.dumps(data))
+        producer.send('my-topic', json.dumps(data).encode('utf-8'))
     else:
         print(f"Failed to fetch data from API (Status Code: {response.status_code})")
 

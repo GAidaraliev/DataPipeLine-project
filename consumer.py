@@ -56,7 +56,7 @@ if __name__ == "__main__":
         .format("json") \
         .queryName("Flattened Weather Writer") \
         .outputMode("append") \
-        .option("path", "s3a://bucket/dsti1") \
+        .option("path", "s3://dsti1") \
         .option("checkpointLocation", "chk-point-dir") \
         .trigger(processingTime="1 minute") \
         .start()

@@ -16,7 +16,7 @@ def create_spark_session(app_name: str):
 def read(spark_session: SparkSession, topic_name):
     df = (
         spark_session.readStream.format("kafka")
-        .option("kafka.bootstrap.servers", "localhost:9092")
+        .option("kafka.bootstrap.servers", "b-1.dstimsk.bfn7de.c2.kafka.eu-west-1.amazonaws.com:9092")
         .option("subscribe", topic_name)
         .option("startingOffsets", "earliest")
         .load()

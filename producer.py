@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 from kafka import KafkaProducer
+=======
+from confluent_kafka import Producer
+>>>>>>> fdced2daa06117d44a1860b8efcc15d514bb15dc
 import requests
 import json
 import time
 
 # Kafka Producer Configuration
+<<<<<<< HEAD
 producer = KafkaProducer(bootstrap_servers='b-1.dstimsk.bfn7de.c2.kafka.eu-west-1.amazonaws.com:9092')
 # for _ in range(100):
 #     producer.send('my-topic', b'some_message_bytes')
+=======
+producer = Producer({'bootstrap.servers': 'b-1.dstimsk.rhqd8r.c2.kafka.eu-west-1.amazonaws.com:9092'})
+
+>>>>>>> fdced2daa06117d44a1860b8efcc15d514bb15dc
 # API endpoints
 API_KEY = "a0bd5e5a4d9a4c4098f143006241003"
 hours = 1

@@ -213,7 +213,6 @@ resource "aws_instance" "bastion_host" {
 
 resource "aws_s3_bucket" "weather-bucket" {
   bucket = "weather-streaming"
-  region  = "eu-west-1"
 }
 
 resource "aws_glue_catalog_database" "weather-catalog" {

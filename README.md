@@ -138,7 +138,7 @@ Open AWS Athena query editor and choose the `weather-database` (created in Terra
 ```
 - The final words 
 ```
-Honestly, the chosen case may be seemed to be slightly simple in spite of my efforts to create a complicated one and it's definetely my current hard skills leave much to be desired. 
+Honestly, the chosen case may be seemed to be slightly simple in spite of my efforts to create a complicated one in with my current coding skills. 
 However, I suppose that this project is worth to be presented.
 ```
 # Author

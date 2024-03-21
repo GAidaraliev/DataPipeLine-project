@@ -65,7 +65,7 @@ That is why it's impossible for me to deploy `Glue Crawler`.
 However, it would not be a problem to illustrate my architecture design. 
 More over I suppose that you will definitely be able to run all 27 resources on your machines.
 ```
-![](images/tfplan.png)
+![](images/tfplan.png)\
 *After 30 minutes you will see the following output:*
 ```
 Apply complete! Resources: 27 added, 0 changed, 0 destroyed.

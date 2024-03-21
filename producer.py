@@ -24,6 +24,6 @@ while True:
         print(f"Failed to fetch data from API (Status Code: {response.status_code})")
     producer.flush()
 
-    # Sleep for 1 hour
-    time.sleep(3600)
+    # Sleep for 1 minute
+    time.sleep(60)
 

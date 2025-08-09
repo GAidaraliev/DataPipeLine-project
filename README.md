@@ -1,4 +1,4 @@
-# Option 2 - Weather streaming pipeline with Amazon Athena to query results - Test2
+# Option 2 - Weather streaming pipeline with Amazon Athena to query results
 ## Project description
 **Objective:** 
 - Develop a streaming data pipeline that retrieves weather data from  [Weather API](https://www.weatherapi.com/).
@@ -144,7 +144,6 @@ However, I suppose that this project is worth to be presented.
 # Author
 Gali Aydaraliev\
 gali.aydaraliev@edu.dsti.institute
-Hello World
 
 
 

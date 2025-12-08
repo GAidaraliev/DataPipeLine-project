@@ -1,5 +1,5 @@
 # Option 2 - Weather streaming pipeline with Amazon Athena to query results
-## Project description
+## Project description2
 **Objective:** 
 - Develop a streaming data pipeline that retrieves weather data from  [Weather API](https://www.weatherapi.com/).
 - Produce this data in real-time to an Apache Kafka topic and build a Spark Streaming application to consume the records from Kafka.
